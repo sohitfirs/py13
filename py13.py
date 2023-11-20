@@ -6,15 +6,11 @@ class Transport:
         self.name = name
         self.max_speed = max_speed
         self.mileage = mileage
-    
-class Authobus(Transport):
-    def __init__(self, name, max_speed, mileage):
-       super().__init__(name, max_speed, mileage)
        
-    def a_print(self):
+   def a_print(self):
         print(f'Name transport: {self.name}, speed: {self.max_speed}, mileage: {self.mileage}')
 
-abobus = Authobus('Renaul Logan', 180, 12)
+abobus = Transport('Renaul Logan', 180, 12)
 
 abobus.a_print()
 print()
